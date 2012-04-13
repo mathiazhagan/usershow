@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 29, 2011 5:10:50 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="model.Productimage" table="productimage" catalog="simon">
+        <id name="prodId" type="long">
+            <column name="prod_id" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="product" class="model.Product" update="false" insert="false" fetch="select">
+            <column name="prod_id" not-null="true" unique="true" />
+        </many-to-one>
+        <property name="imagefile" type="binary">
+            <column name="imagefile" />
+        </property>
+        <property name="img2" type="binary">
+            <column name="img2" />
+        </property>
+        <property name="img3" type="binary">
+            <column name="img3" />
+        </property>
+    </class>
+</hibernate-mapping>

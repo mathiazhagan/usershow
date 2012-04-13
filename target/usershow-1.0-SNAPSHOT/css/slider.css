@@ -1,0 +1,65 @@
+/*
+    anythingSlider v1.0
+    
+    By Chris Coyier: http://css-tricks.com
+    with major improvements by Doug Neiner: http://pixelgraphics.us/
+    based on work by Remy Sharp: http://jqueryfordesigners.com/
+*/
+
+
+.anythingSlider                         { width: 948px; height: 346px; position: relative; margin: 0px 0px 0px 6px; background:url(../images/banner_bg.gif) no-repeat center; }
+.anythingSlider .wrapper                { width: 932px; overflow: auto; height: 330px; margin: 8px; position: absolute; top: 0; left: 0; }
+.anythingSlider .wrapper ul             { width: 9999px; list-style: none; position: absolute; top: 0; left: 0; margin: 0; }
+.anythingSlider ul li                   { display: block; float: left; padding: 0; height: 330px; width: 932px; margin: 0; }
+.anythingSlider .arrow                  { display: block; text-indent: -9999px; position: absolute; top: 375px; margin-left:20px; cursor: pointer; display:none; }
+.anythingSlider .forward                { background-image:url(http://cl102.justhost.comhttp://cl102.justhost.com/404.shtml); background-repeat:no-repeat; height:25px; width:25px; margin-left:52px; }
+.anythingSlider .back                   { background-image:url(http://cl102.justhost.comhttp://cl102.justhost.com/404.shtml); background-repeat:no-repeat; height:25px; width:25px; }
+
+#thumbNav                               { position: relative; top: 310px; text-align: right; margin-right:40px; }
+#thumbNav a                             { color: black; font: 0px Georgia, Serif; background-image:url(../images/bullets.png); background-repeat:no-repeat; background-position:0px 0px; display: inline-block; padding: 2px 6px; height: 8px; margin: 0 5px 0 0;  text-align: center; }
+#thumbNav a:hover                       { background-position:0px -13px; }
+#thumbNav a.cur                         { background-position:0px -13px; }
+
+#start-stop                             { display:none; background: green; background-image: url(http://cl102.justhost.comhttp://cl102.justhost.com/404.shtml); background-repeat: repeat-x; color: white; padding: 2px 5px; width: 40px; text-align: center; position: absolute; right: 45px; top: 323px;}
+#start-stop.playing                     { background-color: red; }
+#start-stop:hover                       { background-image: none; }
+
+/*
+  Prevents
+*/
+.anythingSlider .wrapper ul ul          { position: static; margin: 0; background: none; overflow: visible; width: auto; border: 0; }
+.anythingSlider .wrapper ul ul li       { float: none; height: auto; width: auto; background: none; }
+
+.caption								{ width:912px; height:30px; background-color:#4d7512; position:absolute; margin-top:293px; margin-left:10px;}
+.caption p								{ width:600px; padding:4px 0px 0px 10px; color:#FFF;}
+.caption p a							{ color:#FFF;}
+
+
+
+
+
+
+
+
+.listing_banner .anythingSlider                         { width: 698px; height: 179px; position: relative; margin: 0px 0px 0px 0px; border:#d8d8d8 solid 1px; }
+.listing_banner .anythingSlider .wrapper                { width: 698px; overflow: auto; height: 179px; margin: 0px !important; position: absolute; top: 0; left: 0; }
+.listing_banner .anythingSlider .wrapper ul             { width: 9999px; list-style: none; position: absolute; top: 0; left: 0; margin: 0; }
+.listing_banner .anythingSlider ul li                   { display: block; float: left; padding: 0; height: 179px; width: 698px; margin: 0; }
+.listing_banner .anythingSlider .arrow                  { display: block; text-indent: -9999px; position: absolute; top: 375px; margin-left:20px; cursor: pointer; display:none; }
+.listing_banner .anythingSlider .forward                { background-image:url(http://cl102.justhost.comhttp://cl102.justhost.com/404.shtml); background-repeat:no-repeat; height:25px; width:25px; margin-left:52px; }
+.listing_banner .anythingSlider .back                   { background-image:url(http://cl102.justhost.comhttp://cl102.justhost.com/404.shtml); background-repeat:no-repeat; height:25px; width:25px; }
+
+.listing_banner #thumbNav                               { position: relative; top: 155px; text-align: right; margin-right:10px; }
+.listing_banner #thumbNav a                             { color: black; font: 0px Georgia, Serif; background-image:url(../images/bullets_small.png); background-repeat:no-repeat; background-position:0px 0px; display: inline-block; padding: 2px 6px; height: 8px; margin: 0 5px 0 0;  text-align: center; }
+.listing_banner #thumbNav a:hover                       { background-position:0px -12px; }
+.listing_banner #thumbNav a.cur                         { background-position:0px -12px; }
+
+.listing_banner #start-stop                             { display:none; background: green; background-image: url(http://cl102.justhost.comhttp://cl102.justhost.com/404.shtml); background-repeat: repeat-x; color: white; padding: 2px 5px; width: 40px; text-align: center; position: absolute; right: 45px; top: 323px;}
+.listing_banner #start-stop.playing                     { background-color: red; }
+.listing_banner #start-stop:hover                       { background-image: none; }
+
+/*
+  Prevents
+*/
+.listing_banner .anythingSlider .wrapper ul ul          { position: static; margin: 0; background: none; overflow: visible; width: auto; border: 0; }
+.listing_banner .anythingSlider .wrapper ul ul li       { float: none; height: auto; width: auto; background: none; }

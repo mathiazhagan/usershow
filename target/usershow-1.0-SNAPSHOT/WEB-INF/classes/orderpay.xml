@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration
+2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+
+<struts>	
+         
+    <package name="paybill" extends="struts-default"> 
+       
+         <action name="addcartpro" class="paybill.addcart">
+            <result name="success" type="chain" >counting</result>
+            <result name="login" >login.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        <action name="counting" class="paybill.counting">
+            <result name="login" >login.jsp</result>
+            <result name="success" >detail.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        <action name="counting23" class="paybill.noncuscount" >
+            <result name="success" >detail.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        <action name="countindetail" class="paybill.counting">
+             <result name="login" >login.jsp</result>
+            <result name="success" >cart.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+         <action name="dellist" class="paybill.sesslist" method="delsession">
+            <result name="success" >cart.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        <action name="updlist" class="paybill.sesslist">
+            <result name="success" >cart.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        <action name="calc" class="paybill.sesslist" method="calc">
+            <result name="success" >cart.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        <action name="accdash" class="paybill.dashboard1">
+            <result name="success" type="chain" >cartacc</result>
+            <result name="error">error.jsp</result>
+        </action>
+        <action name="cartacc" class="paybill.counting">
+            <result name="login" >login.jsp</result>
+            <result name="success" >account.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+    </package>
+</struts>
+
